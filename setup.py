@@ -13,7 +13,10 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
     url="https://github.com/jertel/elastalert2",
-    setup_requires='setuptools',
+    setup_requires=[
+        'setuptools',
+        'wheel',
+    ],
     license='Apache 2.0',
     project_urls={
         "Documentation": "https://elastalert2.readthedocs.io",
@@ -37,7 +40,7 @@ setup(
         'boto3>=1.26.30',
         'cffi>=1.15.1',
         'croniter>=1.3.8',
-        'elasticsearch==7.10.1',
+        'elasticsearch==7.17.9',
         'envparse>=0.2.0',
         'exotel==0.1.5',
         'Jinja2>=3.1.2',
@@ -49,13 +52,13 @@ setup(
         'python-dateutil>=2.8.2',
         'PyYAML>=6.0',
         'py-zabbix>=1.1.7',
-        'requests>=2.8.2',
+        'requests>=2.28.1',
         'sortedcontainers>=2.4.0',
         'statsd-tags==3.2.1.post1',
         'stomp.py>=8.1.0',
         'tencentcloud-sdk-python>=3.0.795',
         'texttable>=1.6.7',
         'twilio>=7.16.0',
-        'tzlocal==2.1'
+        'tzlocal==2.1',
     ]
 )
